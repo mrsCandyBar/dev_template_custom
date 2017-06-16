@@ -1,14 +1,11 @@
-/*
- * Base structure
- */
 
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: $BGprimary !important;
 }
 body {
-  color: #fff;
+  color: $colorPrimary;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -58,7 +55,7 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
+  color: $colorPrimary; /* IE8 proofing */
   color: rgba(255,255,255,.75);
   border-bottom: 2px solid transparent;
 }
@@ -71,8 +68,8 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: $colorPrimary;
+  border-bottom-color: $colorPrimary;
 }
 
 @media (min-width: 768px) {
@@ -99,7 +96,7 @@ body {
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
+  color: $colorSecondary; /* IE8 proofing */
   color: rgba(255,255,255,.5);
 }
 
@@ -108,18 +105,18 @@ body {
  * Affix and center
  */
 
-@media (min-width: 768px) {
+@media (min-width: $containerWidthMax) {
 
   /* Handle the widths */
   .masthead,
   .mastfoot,
   .cover-container {
-    max-width: 700px;
+    max-width: $containerWidthMax;
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
 
-@media (min-width: 320px) and (min-height: 480px) {
+@media (min-width: $windowWidthMin) and (min-height: $windowHeightMin) {
 
   /* Fix header and footer and top and bottom of page */
   .masthead, .mastfoot { position: fixed; }
@@ -128,10 +125,3 @@ body {
 
 }
 
-@media (max-width: 300px) {
-
-  /* Make menu list items fit full width */
-  .masthead-nav > li { display: block; }
-  .masthead-nav > li + li { margin: 0px; }
-
-}
