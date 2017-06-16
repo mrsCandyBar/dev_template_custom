@@ -1,5 +1,5 @@
 
-      let generateCake = (function(){
+      let generateCake = (() => {
 
         let $target = $('#target');
         let selectedCake;
@@ -21,13 +21,13 @@
           },          
         ]
 
-        let init = (function() {
+        let init = (() => {
           _render();
           _bindUIevents();
         })();
 
         function _render() {
-          $.get('template/cakeGen.html', function(template) {
+          $.get('template/cakeGen.html', (template) => {
             let rendered = Mustache.render(template, cake[_getRandomNumberBetween(0,2)]);
             $target.html(rendered);
           });
@@ -54,7 +54,7 @@
         }
 
         function _bindUIevents() {
-          $target.delegate('button', 'click', function() {
+          $target.delegate('button', 'click', () => {
             _render();
           });
         };
