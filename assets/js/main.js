@@ -1,6 +1,6 @@
 'use strict';
 
-generateCake = function () {
+var generateCake = function () {
 
   var $target = $('#target');
   var selectedCake = void 0;
@@ -35,7 +35,7 @@ generateCake = function () {
         numberMin = min,
         numberMax = max;
 
-    for (noOfTries = 0; noOfTries < 3; noOfTries++) {
+    for (var noOfTries = 0; noOfTries < 3; noOfTries++) {
       randomNumber = Math.round(Math.random() * (numberMax - numberMin) + numberMin);
 
       if (randomNumber != selectedCake) {

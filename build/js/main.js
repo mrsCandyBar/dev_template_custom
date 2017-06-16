@@ -1,5 +1,5 @@
 
-      generateCake = (function(){
+      let generateCake = (function(){
 
         let $target = $('#target');
         let selectedCake;
@@ -38,7 +38,7 @@
             numberMin = min, 
             numberMax = max;
 
-          for (noOfTries = 0; noOfTries < 3; noOfTries++) {
+          for (let noOfTries = 0; noOfTries < 3; noOfTries++) {
             randomNumber = Math.round(Math.random() * (numberMax - numberMin) + numberMin);
 
             if (randomNumber != selectedCake) {
