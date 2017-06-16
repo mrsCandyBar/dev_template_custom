@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"name": "dev_template_custom",
 	"version": "0.0.2",
 	"description": "Simple base project with Task Runner before moving onto larger frameworks",
@@ -9,6 +8,7 @@
 		"url": "https://github.com/mrsCandyBar/dev_mustache.git"
 	},
 	"dependencies": {
+		"gulp": "^3.9.1",
 		"mustache": "^2.3.0"
 	}
 }
