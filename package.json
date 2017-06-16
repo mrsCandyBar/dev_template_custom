@@ -1,0 +1,14 @@
+{
+<<<<<<< HEAD
+	"name": "dev_template_custom",
+	"version": "0.0.2",
+	"description": "Simple base project with Task Runner before moving onto larger frameworks",
+	"license": "BSD-3-Clause",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrsCandyBar/dev_mustache.git"
+	},
+	"dependencies": {
+		"mustache": "^2.3.0"
+	}
+}
