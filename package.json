@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
 	"name": "dev_template_custom",
 	"version": "0.0.2",
 	"description": "Simple base project with Task Runner before moving onto larger frameworks",
@@ -9,6 +8,14 @@
 		"url": "https://github.com/mrsCandyBar/dev_mustache.git"
 	},
 	"dependencies": {
+		"autoreload-gulp": "^0.2.1",
+		"gulp": "^3.9.1",
+		"gulp-livereload": "^3.8.1",
 		"mustache": "^2.3.0"
+	},
+	"devDependencies": {
+		"babel-preset-es2015": "^6.24.1",
+		"gulp-babel": "^6.1.2",
+		"gulp-sass": "^3.1.0"
 	}
 }
